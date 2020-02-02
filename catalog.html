@@ -5,68 +5,91 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="https://via.placeholder.com/150x100" alt="Логотип Седоны">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation"
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class=site-navigation-current><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <a class="main-header-logo" href="index.html">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип Седоны">
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
+        <section class="catalog" class="filters">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <!--Здесь будет форма-->
+          
+        </section>
 
-    <main class="container">
-     <h1 class="visually-hidden">Гостиницы Седоны</h1>
-     <section class="catalog" class="filters">
-       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-       <!--Здесь будет форма-->
-       
-     </section
-     <section class="catalog">
-       <h2 class="visually-hidden">Список гостиниц</h2>
-       <ul class=catalog-list>
-         <li class="catalog-item">
-           <h3>Amara Resort & SPA</h3>
-           <p class=catalog-item-image>
-            <img src="https://via.placeholder.com/150x100" alt="Amara Resort & SPA">
-          </p>
-           <p class="catalog-item-type">Гостиница</p>
-           <p class="catalog-item-price">от 4000 Р.</p>
-           <p class=catalog-item-info><a href="#">Подробнее</a></p>
-           <p class=catalog-item-booking><a href="#">Забронировать</a></p>
-           </li>
-           <p class="catalog-item">
-            <h3>Desert Quail Inn</h3>
-            <p class=catalog-item-image>
-             <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
-           </p>
-            <p class="catalog-item-type">Мотель</p>
-            <p class="catalog-item-price">от 3000 Р.</p>
-            <p class=catalog-item-info><a href="#">Подробнее</a></p>
-            <p class=catalog-item-booking><a href="#">Забронировать</a></p>
-          </li>
-          <li class="catalog-item">
-              <h3>Villas At Poco Piablo</h3>
-              <p class=catalog-item-image>
-               <img src="https://via.placeholder.com/150x100" alt="Villas At Poco Piablo">
-             </p>
-              <p class="catalog-item-type">Апартаменты</p>
-              <p class="catalog-item-price">от 2000 Р.</p>
-              <p class=catalog-item-info><a href="#">Подробнее</a></p>
-              <p class=catalog-item-booking><a href="#">Забронировать</a></p>
+        <section class="catalog">
+          <h2 class="visually-hidden">Список гостиниц</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3 class="visually-hidden">Amara Resort & SPA</h3>
+              <p class="catalog-item-image">
+                <img src="https://via.placeholder.com/150x100" alt="Amara Resort & SPA">
+              </p>
+              <div>
+                <p>Amara Resort & SPA<p>
+                <p class="catalog-item-type">Гостиница</p>
+                <p class="catalog-item-price">от 4000 Р.</p>
+                <p class="catalog-item-info"><a href="#">Подробнее</a></p>
+                <p class="catalog-item-booking"><a href="#">Забронировать</a></p>
+              </div>
+              <div class="rating">
+                <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <h3 class="visually-hidden">Desert Quail Inn</h3>
+              <p class="catalog-item-image">
+                <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
+              </p>
+              <div>
+                <p>Desert Quail Inn<p>
+                <p class="catalog-item-type">Мотель</p>
+                <p class="catalog-item-price">от 3000 Р.</p>
+                <p class="catalog-item-info"><a href="#">Подробнее</a></p>
+                <p class="catalog-item-booking"><a href="#">Забронировать</a></p>
+              </div>
+              <div class="rating">
+                <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                <p>Рейтинг: 8,9</p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <h3 class="visually-hidden">Villas At Paco Piablo</h3>
+              <p class="catalog-item-image">
+                <img src="https://via.placeholder.com/150x100" alt="Villas At Paco Piablo">
+              </p>
+              <div>
+                <p>Villas At Paco Piablo<p>
+                <p class="catalog-item-type">Апартаменты</p>
+                <p class="catalog-item-price">от 2000 Р.</p>
+                <p class="catalog-item-info"><a href="#">Подробнее</a></p>
+                <p class="catalog-item-booking"><a href="#">Забронировать</a></p>
+              </div>
+              <div class="rating">
+                <span>&#9734;</span><span>&#9734;</span>
+                <p>Рейтинг: 9,2</p>
+              </div>
             </li>
           </ul>
-     </section>
-    </main>
+        </section>
+      </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
-        #VisitSedona<br>
-        Тел:+7(495) 666-02-66
+      <div class="footer-contacts">
+        <p>#VisitSedona</p>
+        <a href="tel: +7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
+      </div>
       </p>
       <div class="footer-socials">
         <ul>
@@ -80,5 +103,6 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
     </footer>
+  </div>
   </body>
 </html>
