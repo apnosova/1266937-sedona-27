@@ -26,15 +26,78 @@
         <h1 class=visually-hidden>Седона</h1>
           <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           
-          <section>
+          <section class="features">
             <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+            <ol class="features-list">
+              <li class="feature-item">
+                <h3>Настоящий городок</h3>
+                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <ul>
+                  <li>
+                    <h3>Жилье</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  </li>
+                  <li>
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </li>
+                  <li>
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="feature-item">
+                <h3>Там есть мост дьявола</h3>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </li>
+              <li class="feature-item">
+                <h3>Небольшая площадь</h3>
+                <p>Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="feature-item">
+                <h3>Красивая дорога</h3>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="feature-item">
+                <h3>Мало туристов</h3>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ol>
           </section>
           
           <section>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <!--Здесь будет форма-->
+
+              <button type="button">Поиск гостиницы в Седоне</button>
+              
+              <form class="search" method="POST" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label for="check-in-date">Дата заезда</label>
+                  <input id="check-in-date" type="date" name="date" value="">
+                </p>
+                <p>
+                  <label for="check-out-date">Дата выезда</label>
+                  <input id="check-out-date" type="date" name="date" value="">        
+                </p>
+                <p>
+                  <label for="adults">Взрослые</label>
+                  <input type="button" value="-">
+                  <input id="adults" type="text" name="text" value="1"/>
+                  <input type="button" value="+">
+                </p>
+                <p>
+                  <label for="children">Дети</label>
+                  <input type="button" value="-">
+                  <input id="children" type="text" name="text" value="0"/>
+                  <input type="button" value="+">
+                </p>
+                
+                <button type="submit">Найти</button>
+              </form>
           </section>
       </main>
       
