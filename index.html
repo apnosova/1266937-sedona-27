@@ -24,14 +24,19 @@
       
       <main>
         <h1 class=visually-hidden>Седона</h1>
+
           <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           
           <section class="features">
             <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-            <ol class="features-list">
+            <ul class="features-list">
               <li class="feature-item">
                 <h3>Настоящий городок</h3>
+                <span>- №1 -</span>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <div class=feature-picture>
+                  <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Настоящий городок">
+                </div>
                 <ul>
                   <li>
                     <h3>Жилье</h3>
@@ -49,22 +54,29 @@
 
               </li>
               <li class="feature-item">
-                <h3>Там есть мост дьявола</h3>
+                <div class=feature-picture>
+                  <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Мост дьявола">
+                </div>
+                <h3>Там есть<br>мост дьявола</h3>
+                <span>- №2 -</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </li>
               <li class="feature-item">
                 <h3>Небольшая площадь</h3>
+                <span>- №3 -</span>
                 <p>Все достопримечательности находятся очень близко</p>
               </li>
               <li class="feature-item">
                 <h3>Красивая дорога</h3>
+                <span>- №4 -</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="feature-item">
                 <h3>Мало туристов</h3>
+                <span>- №5 -</span>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
               </li>
-            </ol>
+            </ul>
           </section>
           
           <section>
@@ -72,8 +84,8 @@
             <p>Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-              <button type="button">Поиск гостиницы в Седоне</button>
-              
+              <a class="button" href="form.html">Поиск гостиницы в Седоне</a>
+                            
               <form class="search" method="POST" action="https://echo.htmlacademy.ru">
                 <p>
                   <label for="check-in-date">Дата заезда</label>

@@ -22,7 +22,7 @@
       <main>
         <h1 class="visually-hidden">Гостиницы Седоны</h1>
 
-        <section class="catalog" class="filters">
+        <section class="catalog">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           
           <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
@@ -61,46 +61,37 @@
               </ul>
             </fieldset>
             
-            <p>
-              <label for="slider">Cтоимость в сутки (Р):</label>
-            </p>
-            <div class="range-slider">
-              <input type="number" value="0" name="min">
-              <input type="number" value="4000" name="max">
-              
-              <div class="range-slider-track">
-                <div class="range-slider-pin-min"></div>
-                <div class="range-slider-pin-max"></div>
+            <fieldset>
+              <legend>Стоимость в сутки (р):</legend>
+
+              <div class="price-controls">
+                <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
               </div>
-            </div>
-            
-            <button type="submit">Показать</button>
-          
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            </fieldset>            
+            <button type="submit">Показать</button>          
           </form>
           
-          <p>
-            <fieldset>
-              <legend>Сортировка:</legend>
-              <ul>
-                <li>
-                  <input type="radio" name="sort" value="by-price" id="sort-by-price" checked>
-                  <label for="sort-by-price">По цене</label>
-                </li>
-                
-                <li>
-                  <input type="radio" name="sort" value="by-type" id="sort-by-type">
-                  <label for="sort-by-type">По типу</label>
-                </li>
-                <li>
-                  <input type="radio" name="sort" value="by-rating" id="sort-by-rating">
-                  <label for="sort-by-rating">По рейтингу</label>
-                </li>
-              </ul>
-              
-              <!--Сортировка по возрастанию и убыванию-->
-            
-            </fieldset>
-          </p>
+          <div class="catalog-sort">
+            <h3>Сортировка</h3>
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">По возрастанию</a></li>
+              <li><a href="#">По убыванию</a></li>
+            </ul>
+          </div>          
+ 
         </section>
 
         <section class="catalog">
@@ -135,14 +126,11 @@
             </li>
 
             <li class="catalog-item">
-
               <div class="catalog-item-image">
                 <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </div>
-
               <div>
-                <h2>Desert Quail Inn</h2>
-                
+                <h2>Desert Quail Inn</h2>                
                 <div>
                 <p class="catalog-item-type">Мотель</p>
                 <p class="catalog-item-price">от 3000 р.</p>
@@ -158,35 +146,26 @@
                   <p><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></p>
                   <p>Рейтинг: 8,9</p>
                 </div>
-
             </li>
-
             <li class="catalog-item">
-
               <div class="catalog-item-image">
                 <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas At Paco Piablo">
               </div>
-
               <div>
                 <h2>Villas At Paco Piablo</h2>
-
                   <div>
                     <p class="catalog-item-type">Апартаменты</p>
                     <p class="catalog-item-price">от 2000 Р.</p>
-                  </div>
-                  
+                  </div>                  
                   <div>
                     <p class="catalog-item-info"><a href="#">Подробнее</a></p>
                     <p class="catalog-item-booking"><a href="#">Забронировать</a></p>
-                  </div>
-                
+                  </div>                
                 </div>
-
               <div class="rating">
                 <p><span>&#9734;</span><span>&#9734;</span></p>
                 <p>Рейтинг: 9,2</p>
               </div>
-
             </li>
           </ul>
         </section>
