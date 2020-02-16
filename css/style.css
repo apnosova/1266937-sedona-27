@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+
+    background-color:  #f2f2f2;
+    background-image: url("background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.inner-page {
+    background-color: #f2f2f2 ;
+    background-image: url("filter-background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    line-height: 26px;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+    color: #766357;
+}
+
+.slogan {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.features h2 {
+    font-size: inherit;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.features-list li {
+    list-style: none;
+}
+
+.features-list {
+    text-align: center;
+}
+
+.features-list h3 {
+    font-size: 21px;
+}
+
+.feature-with-picture {
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.feature-item h3 {
+    color: #000000;
+}
+
+.features-list-life {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+}
+
+.filter li {
+    list-style: none;
+}
+
+.filter li {
+    color: #ffffff;
+}
+
+.price-controls {
+    color: #ffffff;
+}
+
+.filter-button {
+    color: #ffffff;
+    border: solid 2px;
+    text-transform: uppercase;
+
+    background-color: transparent;
+}
+
+.filter-button:hover {
+    color: #000000;
+    border: 2px solid #ffffff;
+
+    background-color: #ffffff;
+}
+
+.catalog-sort,
+.catalog-hotels {
+    background-color: #ffffff;
+}
+
+.catalog-sort ul {
+    list-style: none;
+}
+
+.catalog-sort a {
+    list-style: none;
+
+    text-decoration: none;
+    border-bottom: 1px dashed #81b3d2;
+
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-sort a:hover {
+    color: #81b3d2;
+}
+
+.catalog-sort a:focus {
+    color: #000000;
+
+    border-bottom: none;
+}
+
+.catalog-sort a:active {
+    color: #81b3d2;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-list a {
+    color: 21px;
+    line-height: 26px;
+    text-align: left;
+    color: #000000;
+}
+
+.hotel-title a:hover {
+    color: #81b3d2;
+}
+
+.hotel-title a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-details a {
+    color: #ffffff;
+    font-weight: 700;
+
+    background-color: #81b3d2;
+}
+
+.catalog-item-details a:hover {
+    background-color: #669ec0;
+}
+
+.catalog-item-details a:focus {
+    background-color: #5496bd;
+}
+
+.catalog-item-booking a {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #766357;
+}
+
+.catalog-item-booking a:hover {
+    background-color: #604e43;
+}
+
+.catalog-item-booking a:focus {
+    background-color: #503e33;
+}
+
+.rating-score {
+    color: #666666;
+
+    background-color: #f2f2f2;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+/*Попапы и всплывающие элементы сейчас стилизовать не нужно.
+Скройте их с помощью display: none. Мы вернёмся к ним в седьмом разделе.*/
+.search-form {
+    display: none;
+}
+
+.main-footer {
+    background-color: #ffffff;
+    opacity: 0.9;
+
+}
+
+.main-footer a {
+    color: #000000;
+}
+
+.footer-contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social li {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.footer-copyright {
+    line-height: 26px;
+    color: #000000;
+}
