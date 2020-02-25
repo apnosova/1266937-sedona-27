@@ -18,7 +18,7 @@
             <li class="nav-item"><a class="nav-item-link" href="#">Информация</a></li>
             <li class="nav-item"><a class="nav-item-link" href="#">Фото и видео</a></li>
             <li class="nav-item"><a class="nav-item-link" href="#">Карта штата</a></li>
-            <li class="nav-item-current"><a class="nav-item-current-link" href="catalog.html">Гостиницы</a></li>
+            <li class="nav-item-current"><a class="nav-item-link-current" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -64,35 +64,40 @@
               </ul>
             </fieldset>
             
-            <fieldset>
-              <legend>Стоимость в сутки (р):</legend>
-
-              <div class="price-controls">
-                <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
-              </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+            <div class="filter-wrapper">
+              <fieldset>
+                <legend>Стоимость в сутки (р):</legend>
+                
+                <div class="price-controls">
+                  <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-            </fieldset>            
-            <button type="submit" class="filter-button">Показать</button>          
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </fieldset>
+              <button type="submit" class="filter-button">Показать</button>
+            </div>
+
           </form>
           
           <div class="catalog-sort">
 
-            <h3>Сортировка:</h3>
-            <ul>
-              <li><a class="sort-link-current" href="#">По цене</a></li>
-              <li><a class="sort-link" href="#">По типу</a></li>
-              <li><a class="sort-link" href="#">По рейтингу</a></li>
+            <div class="found">Найдено: 3</div>
+
+            <h3 class="sort-title">Сортировка:</h3>
+            <ul class="sort-list-type">
+              <li class="catalog-sort-item"><a class="sort-link-current" href="#">По цене</a></li>
+              <li class="catalog-sort-item"><a class="sort-link" href="#">По типу</a></li>
+              <li class="catalog-sort-item"><a class="sort-link" href="#">По рейтингу</a></li>
             </ul>
-            <ul>
-              <li><a class="sort-link" href="#">По возрастанию</a></li>
-              <li><a class="sort-link-current" href="#">По убыванию</a></li>
+            <ul class="sort-list-ascending">
+              <li class="catalog-sort-item"><a class="sort-link" href="#">По возрастанию</a></li>
+              <li class="catalog-sort-item"><a class="sort-link-current" href="#">По убыванию</a></li>
             </ul>
           </div>          
  
@@ -107,7 +112,7 @@
                 <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort & SPA">
               </div>
 
-              <div class>
+              <div class="hotel-desc">
                 <h2 class="hotel-title"><a href="#">Amara Resort & SPA</a></h2>
 
                 <div class="hotel-price">
@@ -133,7 +138,7 @@
               <div class="catalog-item-image">
                 <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </div>
-              <div>
+              <div class="hotel-desc">
                 <h2 class="hotel-title"><a href="#">Desert Quail Inn</a></h2>                
                 <div class="hotel-price">
                 <p class="catalog-item-type">Мотель</p>
@@ -155,7 +160,7 @@
               <div class="catalog-item-image">
                 <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas At Paco Piablo">
               </div>
-              <div>
+              <div class="hotel-desc">
                 <h2 class="hotel-title"><a href="#">Villas At Paco Piablo</a></h2>
                   <div class="hotel-price">
                     <p class="catalog-item-type">Апартаменты</p>

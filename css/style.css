@@ -29,11 +29,14 @@ a {
 
 .nav-list {
     list-style: none;
+
+    text-align: center;
 }
 
 .nav-list a {
     color: #000000;
     font-weight: 700;
+
 }
 
 .nav-list a:hover {
@@ -51,7 +54,7 @@ a {
 .welcome-picture {
     background-color: #c2dcf5;
     background-image: url("../img/background-photo.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -76,7 +79,7 @@ a {
 .feature-item-blue {
     color: #ffffff;
     
-    background-color: #81b3d2;
+   background-color: #81b3d2;
     text-align: center;
 }
 
@@ -184,6 +187,13 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.found {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
 .catalog-sort a:hover {
     color: #81b3d2;
 }
@@ -288,3 +298,295 @@ a {
     line-height: 26px;
     color: #000000;
 }
+
+
+
+
+
+/*----Сеточные стили----*/
+
+html,
+body {
+    min-width: 1280px;
+    min-height: 1750px;
+}
+
+.container {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.main-header {
+    display: flex;
+
+    /*Временно для сетки*/
+    min-height: 56px;    
+}
+
+.nav {
+    display: flex;
+
+    /*Временно для сетки*/
+    min-height: 56px;
+}
+
+
+.main-header-logo {
+    order: 0;
+    height: 56px;
+}
+
+.nav-list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /*----Временно для сетки----*/
+    min-height: 56px;
+}
+
+.welcome-picture {
+    padding-left: 370px;
+    padding-top: 132px;
+
+    min-height: 564px;
+}
+
+.features-header {
+    padding-left: 355px;
+    padding-right: 356px;
+
+    min-height: 216px;
+}
+
+.features-title {
+    padding-top: 61px;
+    padding-bottom: 19px;
+
+    min-height: 48px;
+}
+
+.features-text {
+    padding-top: 19px;
+    padding-bottom: 56px;
+
+    min-height: 13px;
+}
+
+.feature-item-blue {
+    display: flex;
+
+    /*----Временно для сетки----*/
+    min-height: 256px;
+}
+
+.features-list-white {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    /*----Временно для сетки----*/
+    min-height: 330px;
+}
+
+.feature-item {
+    width: 400px;
+    
+    /*----Временно для сетки----*/
+    min-height: 330px;
+}
+
+.feature-item-desc {
+    width: 400px;
+
+    /*----Временно для сетки----*/
+    min-height: 256px;
+}
+
+.feature-picture {
+    width: 800px;
+    
+    /*----Временно для сетки----*/
+    min-height: 256px;
+
+}
+
+
+
+
+.features-list-grey {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    /*----Временно для сетки----*/
+    min-height: 256px;
+}
+
+
+/*----Сетка каталога----*/
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 31px;
+    padding-right: 72px;
+    padding-left: 72px;
+    padding-bottom: 31px;
+
+    /*----Временно для сетки----*/
+    min-height: 217px;
+}
+
+.filter ul {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+
+.catalog-sort {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 31px;
+
+}
+
+.sort-title {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-list-type {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-list-ascending {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.catalog-hotels {
+
+    /*----Временно для сетки----*/
+    min-height: 90px;
+
+}
+
+.catalog-item {
+    display: flex;
+
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /*----Временно для сетки----*/
+    min-height: 90px;
+}
+
+.catalog-list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.hotel-title {
+    margin: 0;
+    padding: 0;
+
+    /*----Временно для сетки----*/
+    min-height: 16px;
+}
+
+.hotel-desc {
+    margin-left: 30px;
+
+}
+
+.hotel-price {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hotel-booking {
+    display: flex;
+    
+}
+
+.catalog-item-details {
+    padding-right: 6px;
+}
+
+.rating {
+    margin-left: auto;
+
+    padding-left: 538px;
+}
+
+
+
+.main-footer {
+    display: flex;
+    padding: 36px 132px;
+
+    /*----Временно для сетки----*/
+    min-height: 120px;
+}
+
+.main-footer .wrapper {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 400px;
+    margin: 0;
+
+    /*----Временно для сетки----*/
+    min-height: 120px;
+}
+
+
+.footer-social {
+    width: 400px;
+
+
+    /*----Временно для сетки----*/
+    min-height: 120px;
+}
+
+
+.footer-copyright {
+    width: 400px;
+    margin: 0;
+    margin-left: auto;
+}
+
+
+
+
+
