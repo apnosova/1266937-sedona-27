@@ -18,7 +18,7 @@
             <li class="nav-item"><a class="nav-item-link" href="#">Информация</a></li>
             <li class="nav-item"><a class="nav-item-link" href="#">Фото и видео</a></li>
             <li class="nav-item"><a class="nav-item-link" href="#">Карта штата</a></li>
-            <li class="nav-item-current"><a class="nav-item-link-current" href="catalog.html">Гостиницы</a></li>
+            <li class="nav-item current"><a class="nav-item-link current" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -31,7 +31,7 @@
           <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
-              <ul>
+              <ul class="filter-options">
                 <li class="filter-option">
                   <input type="checkbox" name="pool" id="filter-pool" checked>
                   <label for="filter-pool">Бассейн</label>
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-              <ul>
+              <ul class="filter-options">
                 <li class="filter-option">
                   <input type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
