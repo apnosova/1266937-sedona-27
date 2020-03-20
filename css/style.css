@@ -186,7 +186,7 @@ input[type="radio"].visually-hidden {
   margin: 0 45px 25px;
 }
 
-feature-text {
+.feature-text {
   margin: 0;
 }
 
@@ -196,7 +196,7 @@ feature-text {
 }
 
 .feature-item-desc-blue {
-  padding: 47px 49px 46px;
+  padding: 47px 49px 59px;
 
   background-color: #81b3d2;
 }
@@ -293,6 +293,12 @@ feature-text {
 .features-list-grey li {
   box-sizing: border-box;
   width: 400px;
+  padding: 45px 67px;
+  padding-top: 48px;
+  padding-bottom: 58px;
+
+
+  text-align: center;
   
   list-style: none;
 }
@@ -308,12 +314,6 @@ feature-text {
   display: block;
   margin: 0;
   margin-bottom: 21px;
-}
-
-.feature-item-desc-grey {
-  padding: 45px 67px;
-  
-  text-align: center;
 }
 
 /*Search-hotel-header*/
@@ -357,10 +357,13 @@ feature-text {
 }
 
 .search-form {
-  padding: 56px 54px 56px 57px;
+  padding: 56px 55px 56px 57px;
   
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  animation-name: slide-down;
+  animation-duration: 0.8s; 
 }
 
 .header-button,
@@ -416,8 +419,7 @@ feature-text {
 .search-item-date input[type=text] {
   width: 346px;
   height: 38px;
-  padding: 6px 11px;
-  padding-right: 40px;
+  padding: 6px 40px 6px 9px;
   
   border: 2px solid transparent;
 }
@@ -558,7 +560,7 @@ feature-text {
 
 .adults-wrapper {
   display: flex;
-  width: 114px;
+  width: 115px;
 
   background-color: #f2f2f2;
 }
@@ -604,6 +606,59 @@ feature-text {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
+}
+
+/*Animation*/
+
+.search-form-close {
+  display: none;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-25%);
+  }
+  50%{
+    transform: translateY(8%);
+  }
+  65%{
+    transform: translateY(-4%);
+  }
+  80%{
+    transform: translateY(4%);
+  }
+  95%{
+    transform: translateY(-2%);
+  }           
+  100% {
+    transform: translateY(0%);
+  }       
+}
+
+.search-form-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /*Map*/
@@ -1032,7 +1087,7 @@ feature-text {
 .catalog-item-details a {
   display: block;
 
-  padding: 4px 16px 2px 17px;
+  padding: 3px 16px 3px 17px;
 
   font-weight: bold;
   color: #ffffff;
@@ -1067,7 +1122,7 @@ feature-text {
 
 .catalog-item-booking a {
   display: block;
-  padding: 4px 16px 2px 17px;
+  padding: 3px 16px 3px 17px;
   
   font-weight: bold;
   color: #ffffff;
@@ -1119,7 +1174,7 @@ feature-text {
 }
 
 .rating-score {
-  padding: 3px 13px 3px 14px;
+  padding: 3px 12px 3px 14px;
 
   text-align: center;
   color: #666666;
@@ -1166,9 +1221,9 @@ feature-text {
 }
 
 .footer-contacts a {
-    display: block;
-    margin-left: 90px;
-    margin-top: 7px;
+  display: block;
+  margin-left: 90px;
+  margin-top: 7px;
 }
 
 .footer-social {
